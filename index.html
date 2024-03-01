@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hunting Phone API</title>
+
+    <!-- daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-500 w-[100%]">
+    <main class="container m-auto w-10/12">
+      <!-- input bar -->
+      <section class="pt-9">
+      <h3 class="text-lg font-bold text-amber-50">Serch Any Phone Model</h3>
+        <input
+          id="serch-fild"
+          type="text"
+          placeholder="Search......."
+          class="input input-bordered w-full max-w-xs"
+        />
+        <button onclick="inputButton()" class="btn btn-active btn-secondary">
+          Secondary
+        </button>
+      </section>
+
+      <!-- <section>
+            <input id="second-input" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <button id="secod-button" class="btn btn-active btn-secondary">Secondary</button>
+        </section> -->
+
+      <!-- serch result -->
+      <section>
+        <div id="togol-btn" class="justify-center flex mt-60 hidden">
+          <span class="loading loading-ring text-yellow-400 loading-lg"></span>
+        </div>
+        <div
+          id="phone-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5"
+        ></div>
+        <div id="show-mor-phone" class="hidden flex justify-center">
+          <button class="btn btn-error mb-11">Show mor data</button>
+        </div>
+      </section>
+
+      <!-- show modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      
+      <dialog id="show_detais_modal" class="modal">
+        <div id="show-phone-del">
+           
+        </div>
+      </dialog>
+
+    </main>
+    <footer></footer>
+
+    <!-- script -->
+    <script src="./js/phone.js"></script>
+  </body>
+</html>
